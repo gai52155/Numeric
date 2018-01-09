@@ -1,4 +1,5 @@
-package numeric;
+package Interporation;
+
 public class NewtonForward {
 
     public static long fac(long l) {
@@ -31,7 +32,7 @@ public class NewtonForward {
         for (int i = 0; i < n; i++) {
             fx[i][0] = f[i];
         }
-        
+
         // GENERATE DATA
         for (int i = 1; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
