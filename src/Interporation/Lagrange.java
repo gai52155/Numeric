@@ -4,15 +4,15 @@ public class Lagrange {
 
     public static double calculate(double t, double x[], int index) {
         double upper = 1.0, lower = 1.0;
-        double ans;
+        double anss;
         for (int i = 0; i < x.length; i++) {
             if (i != index) {
                 upper = upper * (t - x[i]);
                 lower = lower * (x[index] - x[i]);
             }
         }
-        ans = upper / lower;
-        return ans;
+        anss = upper / lower;
+        return anss;
     }
 
     public static void main(String[] args) {
